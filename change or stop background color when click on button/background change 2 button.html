@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color Changer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .start {
+      background-color: #4caf50;
+      color: white;
+    }
+
+    .start:hover {
+      background-color: #45a049;
+    }
+
+    .pause {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .pause:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="start" onclick="startBackgroundChange()">Start</button>
+    <button class="pause" onclick="pauseBackgroundChange()">Pause</button>
+  </div>
+
+  <script>
+    let colorInterval; // Variable to store the interval
+
+    // Function to generate a random color
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Function to start changing the background color
+    function startBackgroundChange() {
+      // Prevent multiple intervals
+      if (!colorInterval) {
+        colorInterval = setInterval(() => {
+          document.body.style.backgroundColor = getRandomColor();
+        }, 1000); // Change color every 1 second
+      }
+    }
+
+    // Function to pause changing the background color
+    function pauseBackgroundChange() {
+      clearInterval(colorInterval); // Stop the interval
+      colorInterval = null; // Reset the interval variable
+    }
+  </script>
+</body>
+</html>

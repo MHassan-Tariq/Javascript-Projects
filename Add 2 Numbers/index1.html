@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Two Text Fields</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #4a90e2;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357ab8;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    #result {
+      color: #4a90e2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Add Two Texts</h1>
+    <div class="error" id="error-message"></div>
+    <div>
+      <label for="text1">Text 1:</label>
+      <input type="text" id="text1" placeholder="Enter first text">
+    </div>
+    <div>
+      <label for="text2">Text 2:</label>
+      <input type="text" id="text2" placeholder="Enter second text">
+    </div>
+    <button onclick="concatenateText()">Add Text</button>
+    <h2>Result: <span id="result">None</span></h2>
+  </div>
+
+  <script>
+    function concatenateText() {
+      const text1 = document.getElementById('text1').value.trim();
+      const text2 = document.getElementById('text2').value.trim();
+
+  
+      const errorMessage = document.getElementById('error-message');
+
+    
+      if (!text1 || !text2) {
+        errorMessage.textContent = "Both fields are required.";
+        return; 
+      }
+
+      errorMessage.textContent = "";
+
+      const result = text1 + " " + text2;
+
+      document.getElementById('result').textContent = result;
+
+
+      document.getElementById('text1').value = "";
+      document.getElementById('text2').value = "";
+    }
+  </script>
+</body>
+</html>
