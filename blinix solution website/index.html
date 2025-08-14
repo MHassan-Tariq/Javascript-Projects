@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comptaways</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="logo">
+          <img src="img/Logo.png" alt="Comptaways Logo" />
+        </div>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#">Comptabilité</a></li>
+            <li><a href="#">Créer mon entreprise</a></li>
+            <li><a href="#">Notre appli</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Accès client</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-buttons">
+          <button class="email">
+            <img src="img/email btn.png" alt="Email" />
+          </button>
+          <button class="btn btn-phone">06 99 10 75 73</button>
+          <button class="nav-btn">Prendre rendez-vous</button>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            🚀 Comptaways,<br />
+            l'expert comptable <span class="highlight">en ligne</span> pour
+            <span class="highlight">indépendants</span> et
+            <span class="highlight">TPE</span>
+          </h1>
+          <p class="hero-para">
+            Créez votre entreprise gratuitement et démarrez.<br />
+            Un expert-comptable spécialisé vous accompagne pour le développement
+            de votre activité. Comptaways est un cabinet d'expert-comptable en
+            ligne inscrit à l'Ordre des Experts-Comptables.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary">Nos solutions</button>
+            <button class="btn-outline">Création offerte</button>
+          </div>
+          <div class="rating">
+            <div class="trustpilot-info">
+              <span class="rating-text">⭐ 4.7 / 5 sur Trustpilot</span>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="google-info">
+              <img src="img/google-logo.png" alt="Google" class="google-logo" />
+              <span class="google-text">Avis clients</span>
+              <div class="google-stars">⭐⭐⭐⭐⭐ 4.9</div>
+            </div>
+          </div>
+        </div>
+        <div class="image-section">
+          <div class="hero-image-container">
+            <img src="img/header-img.png" alt="Expert Comptable" />
+            <div class="dashboard-overlay">
+              <div class="dashboard-card">
+                <div class="card-header">Résumé des dépenses</div>
+                <div class="progress-bars">
+                  <div class="progress-item">
+                    <div class="progress-bar green"></div>
+                  </div>
+                  <div class="progress-item">
+                    <div class="progress-bar orange"></div>
+                  </div>
+                  <div class="progress-item">
+                    <div class="progress-bar red"></div>
+                  </div>
+                  <div class="progress-item">
+                    <div class="progress-bar yellow"></div>
+                  </div>
+                </div>
+                <div class="amount">39,25</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Background decorative circles -->
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+
+    <section class="section-serenity">
+      <h2>🤝 Un démarrage en <span class="highlight">toute sérénité</span></h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Connectez vos comptes<br />et laissez-vous guider</h3>
+          <p>
+            Notre application se connecte gratuitement à votre banque et vous
+            accompagne en temps réel dans vos démarches. Obtenez votre
+            entreprise grâce à notre accompagnement de A à Z.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Nos experts comptables<br />vous conseillent</h3>
+          <p>
+            Nos experts comptables spécialisés vous accompagnent et répondent à
+            toutes vos questions. Bénéficiez de conseils personnalisés et d'un
+            suivi régulier pour optimiser votre gestion.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>
+            Obtenez rapidement votre<br />bilan certifié par un de nos<br />experts-comptables
+          </h3>
+          <p>
+            Votre bilan est préparé et certifié par nos experts-comptables. Vous
+            bénéficiez d'un service fiable et reconnu par l'administration
+            fiscale.
+          </p>
+        </div>
+      </div>
+      <button class="btn-quote">Demander un devis</button>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+      <div class="pricing-container">
+        <div class="expense-card">
+          <div class="expense-header">Dépenses du mois</div>
+          <div class="expense-amount">11 390 €</div>
+          <div class="expense-chart">
+            <div class="chart-segment green"></div>
+            <div class="chart-text">+ 28% vs J</div>
+          </div>
+        </div>
+        <div class="pricing-left">
+          <div class="circular-image">
+            <img src="img/leftpricing.jpg" alt="Femme travaillant" />
+          </div>
+        </div>
+
+        <div class="pricing-center">
+          <div class="pricing-header">
+            <!-- <div class="pricing-badge">⚡ Une offre sans engagement</div> -->
+            <h2>⚡ Une offre sans engagement adaptée à votre activité</h2>
+          </div>
+
+          <div class="activity-tabs">
+            <button class="tab-btn active">Indépendant</button>
+            <button class="tab-btn">Petite entreprise ou entreprise</button>
+            <button class="tab-btn">Création</button>
+          </div>
+          <div class="offer-highlight">
+            <span class="highlight-text">Offre la plus choisie 🔥</span>
+          </div>
+          <div class="pricing-card">
+            <div class="price-header">
+              <span class="price-from">Dès</span>
+              <span class="price-amount">45€</span>
+              <span class="price-period">HT / Mois</span>
+            </div>
+            <h3 class="offer-title">Offre Small</h3>
+            <p class="offer-description">
+              Un Expert-Comptable Comptaways vous accompagne dans
+              l'accompagnement de votre entreprise individuelle avec un accès à
+              notre application pro.
+            </p>
+
+            <div class="features-section">
+              <h4>Inclus dans l'offre</h4>
+              <div class="features-list">
+                <div class="feature-item">
+                  <span class="feature-icon">✓</span>
+                  <span>Création de votre entreprise incluse</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">✓</span>
+                  <span>Application comptable offerte</span>
+                </div>
+
+                <div class="feature-item">
+                  <span class="feature-icon">✓</span>
+                  <span>Module de facturation</span>
+                </div>
+              </div>
+              <a href="#" class="details-link">Consulter l'offre en détail →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-right">
+          <div class="circular-image">
+            <img src="img/rightpricing.jpg" alt="Équipe travaillant" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+      <div class="support-container">
+        <div class="support-left">
+          <div class="support-image">
+            <img src="img/supportimage.png" alt="Support team member" />
+          </div>
+        </div>
+
+        <div class="support-right">
+          <div class="support-content">
+            <h2 class="support-title">
+              🤝 La compta devient simple Vous êtes accompagné par nos équipes
+            </h2>
+
+            <p class="support-description">
+              Tout au long de l'année vous pouvez contacter votre conseiller
+              dédié (Léa, Morgane, Omar...) qui vous répond.
+            </p>
+
+            <button class="support-btn">Demander mon devis !</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Software Discovery Section -->
+    <section class="software-section">
+      <div class="software-container">
+        <div class="software-left">
+          <div class="software-mascot">
+            <img src="img/featurelogo.png" alt="Mascot Character">
+          </div>
+        </div>
+        
+        <div class="software-center">
+          <div class="software-content">
+            <h2 class="software-title">
+              💻 Découvrez le fonctionnement<br>
+              de notre logiciel <span class="highlight-word">partenaire</span>
+            </h2>
+            
+            <p class="software-description">
+              Connectez votre simplement à votre application.<br>
+              Vous avez accès à votre compta bancaire, découvrez les fonctionnalités pratiques.
+            </p>
+            
+            <div class="features-list">
+              <div class="feature-item">
+                <span class="feature-check">✓</span>
+                <span>Module de facturation et de relance clients</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-check">✓</span>
+                <span>Vos indicateurs clés (Graphiques de trésorerie, Création de graphiques personnalisés illimité)</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-check">✓</span>
+                <span>Synchronisation bancaire</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-check">✓</span>
+                <span>Collecte des achats</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-check">✓</span>
+                <span>Bénéficiez de la valeur probante</span>
+              </div>
+            </div>
+            
+            <a href="#" class="learn-more-link">Et plus encore ! →</a>
+            
+            <div class="email-subscription">
+              <input type="email" placeholder="Entrez votre adresse mail" class="email-input">
+              <button class="subscribe-btn">Je souhaite maintenant !</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="software-right">
+          <div class="laptop-container">
+            <img src="img/featureimg.png" alt="Laptop Dashboard">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+      <div class="vision-container">
+        <div class="vision-left">
+          <div class="vision-content">
+            <div class="vision-badge">
+              <!-- <span class="badge-emoji">🦋</span> -->
+              <span class="badge-text"
+                >De nombreux entrepreneurs comme vous
+                <span class="highlight-word">rejoignent</span> Comptaways</span
+              >
+            </div>
+
+            <p class="vision-description">
+              Aujourd'hui, l'entrepreneur a besoin d'être accompagné. Avec
+              Comptaways vous ne renoncez pas au conseil en choisissant un
+              cabinet en ligne. Nous faisons les deux.<br />
+              Comptaways vous Comptaways fait votre projet !
+            </p>
+          </div>
+        </div>
+
+        <div class="vision-center">
+          <div class="businessman-image">
+            <img src="img/introimg.png" alt="Entrepreneur professionnel" />
+          </div>
+        </div>
+
+        <div class="vision-right">
+          <h3 class="vision-title">Notre vision</h3>
+
+          <div class="vision-features">
+            <div class="vision-feature">
+              <div class="feature-icon purple">
+                <span>✨</span>
+              </div>
+              <div class="feature-text">
+                <p>
+                  Nous vous engageons à rendre la comptabilité simple pour les
+                  entrepreneurs.
+                </p>
+              </div>
+            </div>
+
+            <div class="vision-feature">
+              <div class="feature-icon green">
+                <span>💰</span>
+              </div>
+              <div class="feature-text">
+                <p>
+                  Comptaways est un service 100% en ligne, 100% digital, 100%
+                  éco-friendly.
+                </p>
+              </div>
+            </div>
+
+            <div class="vision-feature">
+              <div class="feature-icon orange">
+                <span>💡</span>
+              </div>
+              <div class="feature-text">
+                <p>
+                  Nous vous engageons à proposer toujours les solutions les plus
+                  innovantes et à vous faire gagner du temps en simplifiant la
+                  comptabilité et l'administratif.
+                </p>
+              </div>
+            </div>
+
+            <div class="vision-feature">
+              <div class="feature-icon blue">
+                <span>🎯</span>
+              </div>
+              <div class="feature-text">
+                <p>
+                  Nous ne négligeons pas l'accompagnement du client car sa
+                  satisfaction reste notre priorité.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="testimonial-section">
+        <h2 class="section-title">
+            <span class="star-icon">⭐️</span>
+            Les avis de <span class="highlighted-text">nos clients</span>
+        </h2>
+
+        <div class="testimonial-container">
+            <button class="nav-button prev-button">←</button>
+
+            <div class="testimonial-card">
+                <div class="card-header">
+                    <h3 class="client-name green-text">Gwenaëlle</h3>
+                    <p class="client-role green-text">Concessionnaire auto</p>
+                </div>
+                <p class="client-comment">
+                    Comptoways est un cabinet comptable sachant répondre à chaque attente de son client. Je recommande fortement de faire confiance à CE professionnel.
+                </p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="card-header">
+                    <h3 class="client-name">Catherine</h3>
+                    <p class="client-role">Avocate</p>
+                </div>
+                <p class="client-comment">
+                    J'ai confié le suivi comptable de mon entreprise à Comptoways et suis entièrement satisfaite. Les déclarations sont faites sans retard. J'ai une vision grâce à leur tableau de bord de la trésorerie, facturation, charges diverses. C'est clair, précis, efficace et à l'heure. Je recommande vivement. Et en plus ils sont agréables !
+                </p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="card-header">
+                    <h3 class="client-name orange-text">Rémi</h3>
+                    <p class="client-role orange-text">Chef cuisinier</p>
+                </div>
+                <p class="client-comment">
+                    Comptoways vous accompagne dans tous les aspects comptables de votre société. La présentation d'outils d'analyse est une aide précieuse pour le pilotage et l'arbitrage d'investissement de votre activité. Forte expertise, je vous le recommande !
+                </p>
+            </div>
+
+            <button class="nav-button next-button">→</button>
+        </div>
+    </div>
+
+<div class="container">
+        <div class="decorative-shape-blue"></div>
+        <div class="decorative-shape-pink"></div>
+
+        <div class="content">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="hand-icon">👉</span>
+                    Nos banques <span class="highlighted-text">partenaires</span>
+                </h2>
+                <p class="section-description">
+                    Notre application se connecte à toutes les banques les plus courantes. Vos flux bancaires remontent automatiquement sur notre application.
+                </p>
+            </div>
+
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="img/brand-1.png" alt="Société Générale" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-2.png" alt="Crédit du Nord" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-3.png" alt="Crédit Mutuel" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-4.png" alt="BNP Paribas" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-5.png" alt="CIC" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-6.png" alt="Banque Populaire" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-7.png" alt="Caisse d'Epargne" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-8.png" alt="Crédit Agricole" class="brand-image">
+                </div>
+                <div class="brand-card">
+                    <img src="img/brand-9.png" alt="HSBC" class="brand-image">
+                </div>
+                <div class="brand-card et-plus-card">
+                    <span>Et plus encore...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last-container">
+        <div class="decorative-shape-yellow"></div>
+
+        <div class="image-section">
+            <div class="image-container">
+                <div class="image-1">
+                    <img src="img/last-pic1.png" alt="People collaborating in an office">
+                </div>
+                <div class="image-2">
+                    <img src="img/last-pic2.jpg" alt="Person looking at a smartphone">
+                <!-- </div>
+                <div class="overlay-icon">
+                    <img src="img/lastlogo.png" alt="Logo icon">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+                <h2 class="form-title">
+                    <span class="chat-bubble-icon">💬</span>
+                    Discutons de <span class="highlighted-text">votre projet</span>
+                </h2>
+                <p class="form-description">
+                    Nous accompagnons tous secteurs d'activité (actuellement près de 60 secteurs différents). Nous serons ravis d'échanger avec vous sur votre projet. Nous vous accompagnerons pour votre réussite.
+                </p>
+            </div>
+
+            <form action="#">
+                <div class="form-grid">
+                    <input type="text" class="form-field" placeholder="Votre nom">
+                    <input type="text" class="form-field" placeholder="Votre prénom">
+                    <input type="text" class="form-field" placeholder="Votre n° de téléphone">
+                    <input type="email" class="form-field" placeholder="Votre adresse email">
+                    <textarea class="form-field full-width" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Envoyer mon message !</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+  
+            
+            </div>
+                 
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="img/Logo.png" alt="Comptoways Logo">
+                   
+                </div>
+                <p class="brand-description">
+                    Comptoways est un cabinet comptable inscrit à l'Ordre des Experts comptables 100% en ligne.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="column-title">Notre site</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Comptabilité</a></li>
+                    <li><a href="#">Créer mon entreprise</a></li>
+                    <li><a href="#">Notre appli</a></li>
+                    <li><a href="#">Tarifs</a></li>
+                    <li><a href="#">Accès client</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="column-title">Pages légales</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="column-title">Nous suivre</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="column-title">Aide & Service client</h4>
+                <div class="contact-info">
+                    <a href="tel:0699107573">06 99 10 75 73</a>
+                    <a href="mailto:aide@comptoways.fr">aide@comptoways.fr</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Made with <span class="heart-icon">❤</span> by 4Bdez - Agence de communication</span>
+        </div>
+    </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleMobileMenu() {
+        const nav = document.getElementById("mainNav");
+        const toggle = document.querySelector(".mobile-menu-toggle");
+
+        nav.classList.toggle("active");
+        toggle.classList.toggle("active");
+
+        // Animate hamburger menu
+        const spans = toggle.querySelectorAll("span");
+        if (toggle.classList.contains("active")) {
+          spans[0].style.transform = "rotate(-45deg) translate(-5px, 6px)";
+          spans[1].style.opacity = "0";
+          spans[2].style.transform = "rotate(45deg) translate(-5px, -6px)";
+        } else {
+          spans[0].style.transform = "rotate(0) translate(0, 0)";
+          spans[1].style.opacity = "1";
+          spans[2].style.transform = "rotate(0) translate(0, 0)";
+        }
+      }
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const nav = document.getElementById("mainNav");
+        const toggle = document.querySelector(".mobile-menu-toggle");
+
+        if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+          nav.classList.remove("active");
+          toggle.classList.remove("active");
+
+          const spans = toggle.querySelectorAll("span");
+          spans[0].style.transform = "rotate(0) translate(0, 0)";
+          spans[1].style.opacity = "1";
+          spans[2].style.transform = "rotate(0) translate(0, 0)";
+        }
+      });
+
+      // Close mobile menu when window is resized to desktop
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+          const nav = document.getElementById("mainNav");
+          const toggle = document.querySelector(".mobile-menu-toggle");
+
+          nav.classList.remove("active");
+          toggle.classList.remove("active");
+
+          const spans = toggle.querySelectorAll("span");
+          spans[0].style.transform = "rotate(0) translate(0, 0)";
+          spans[1].style.opacity = "1";
+          spans[2].style.transform = "rotate(0) translate(0, 0)";
+        }
+      });
+    </script>
+  </body>
+</html>
